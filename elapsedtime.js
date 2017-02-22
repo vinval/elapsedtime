@@ -42,7 +42,7 @@ setInterval(function(){
   var now = new Date().getTime();
   for (var n=0; n<allElements.length; n++) {
     if (allElements[n].hasAttribute("yourLanguage")) {
-      var time = parseInt(allElements[n].getAttribute("yourLanguage"));
+      var time = parseInt(allElements[n].getAttribute("elapsed"));
       var diff = (now - time)/1000;
       switch (true) {
         case (diff < 10): allElements[n].innerHTML = yourLanguage[0][language].now; break;
